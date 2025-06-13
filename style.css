@@ -1,0 +1,72 @@
+body {
+    background-color: #ffc1c1;
+    margin: 0;
+    display: flex;
+    min-height: 100vh;
+    font-family: sans-serif;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 18px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.fogueira {
+    background-color: transparent;
+    max-width: 50%;
+    width: 50rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.botao_fogueira {
+    background-color: transparent;
+    border-radius: 50%;
+    border: 2px solid rgb(128, 0, 0);
+    transition: background-color 0.3s;
+    width: 7rem;
+    height: 7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botao_fogueira:hover {
+    background-color: rgb(128, 0, 0);
+    color: white;
+}
+
+#fundoMensagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: rgb(128, 0, 0);
+    color: white;
+    border-radius: 10px;
+    max-width: 80%;
+    width: 20rem;
+    font-weight: bold;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* #apertouNaFogueiraAcesa,
+#apertouNaFogueiraApagada {
+    font-weight: bold;
+    background-color: transparent;
+    transition: opacity 0.5s ease-in-out;
+} */
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
